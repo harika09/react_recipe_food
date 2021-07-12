@@ -50,7 +50,7 @@ function Home() {
                 type="text"
                 name="food"
                 className="search"
-                placeholder="Enter Food Name"
+                placeholder="Enter Food..."
                 value={foodName}
                 onChange={(e) => {
                   setFoodName(e.target.value);
