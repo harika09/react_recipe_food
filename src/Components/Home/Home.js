@@ -44,21 +44,23 @@ function Home() {
         <div className="top-content">
           <h1>Food Recipe</h1>
 
-          <form onSubmit={submit}>
-            <input
-              type="text"
-              name="food"
-              className="search"
-              placeholder="Enter Food Name"
-              value={foodName}
-              onChange={(e) => {
-                setFoodName(e.target.value);
-              }}
-            />
-            <button type="submit" className="btn-search">
-              <i className="fa fa-search"></i>
-            </button>
-          </form>
+          <div className="home-form">
+            <form onSubmit={submit}>
+              <input
+                type="text"
+                name="food"
+                className="search"
+                placeholder="Enter Food Name"
+                value={foodName}
+                onChange={(e) => {
+                  setFoodName(e.target.value);
+                }}
+              />
+              <button type="submit" className="btn-search">
+                <i className="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
         </div>
 
         {isloading ? (

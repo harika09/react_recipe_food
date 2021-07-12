@@ -16,20 +16,40 @@
   margin-bottom: 20px;
 }
 
-input[type="text"] {
-  padding: 15px;
-  width: 30%;
-  border: 3px solid #df5e5e;
-  border-right: none;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #000;
-  font-size: 16px;
+.home-form {
+  position: relative;
+  width: 100%;
 }
 
-.form {
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
   position: relative;
+  width: 30%;
+  padding: 12px;
+  border: 3px solid #df5e5e;
+}
+
+.btn-search {
+  position: absolute;
+  right: 35%;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  background-color: #df5e5e;
+  padding: 3.5px;
+}
+
+.btn-search i {
+  font-size: 1.5rem;
+  padding: 7px;
+  color: #fff;
 }
 /* remove autofill background color*/
 input:-webkit-autofill,
@@ -37,23 +57,6 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
-}
-
-.btn-search {
-  position: relative;
-  bottom: -2px;
-  background-color: none;
-  outline: none;
-  border: none;
-}
-
-.btn-search i {
-  font-size: 1.3rem;
-  background-color: #df5e5e;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
 }
 
 .food-recipe-container {
@@ -86,5 +89,9 @@ input:-webkit-autofill:active {
 
   .loading-animation {
     background-size: 450px;
+  }
+
+  .btn-search {
+    right: 10%;
   }
 }
