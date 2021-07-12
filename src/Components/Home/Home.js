@@ -56,9 +56,6 @@ function Home() {
                   setFoodName(e.target.value);
                 }}
               />
-              <button type="submit" className="btn-search">
-                <i className="fas fa-search"></i>
-              </button>
             </form>
           </div>
         </div>
