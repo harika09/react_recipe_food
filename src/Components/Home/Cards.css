@@ -76,6 +76,7 @@ button {
   padding: 10px;
   max-height: calc(100vh - 200px);
   overflow-y: auto;
+  border-radius: 4px;
 }
 
 .close {
@@ -86,10 +87,10 @@ button {
 
 @media screen and (max-width: 600px) {
   .modal-content {
-    max-width: 450px;
+    max-width: 350px;
   }
 
   .food-recipe {
-    width: 350px;
+    width: 450px;
   }
 }

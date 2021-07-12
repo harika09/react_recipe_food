@@ -3,8 +3,17 @@ import RecipeDetails from "./RecipeDetails";
 import "./Cards.css";
 
 function Cards({ recipe }) {
-  const { label, source, image, url, ingredients, healthLabels, mealType } =
-    recipe.recipe;
+  const {
+    label,
+    source,
+    image,
+    url,
+    ingredients,
+    healthLabels,
+    mealType,
+    dietLabels,
+    dishType,
+  } = recipe.recipe;
   const [data, setData] = useState({
     label: "",
     image: "",
@@ -14,6 +23,8 @@ function Cards({ recipe }) {
     serve: "",
     mealType: "",
     source: "",
+    dietLabels: "",
+    dishType: "",
   });
 
   const [click, setClick] = useState(false);
@@ -44,6 +55,8 @@ function Cards({ recipe }) {
                 serve: recipe.recipe.yield,
                 mealType: mealType,
                 source: source,
+                dietLabels: dietLabels,
+                dishType: dishType,
               });
             }}
           >
@@ -59,7 +72,6 @@ function Cards({ recipe }) {
             </span>
             <RecipeDetails data={data} />
           </div>
-          {/* */}
         </div>
       ) : (
         ""
