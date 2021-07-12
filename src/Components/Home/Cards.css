@@ -37,7 +37,7 @@
   transition: 0.5s ease;
 }
 
-button {
+.btn-recipe {
   border: none;
   outline: none;
   background-color: #df5e5e;

@@ -28,15 +28,32 @@ input[type="text"] {
   font-size: 16px;
 }
 
+.form {
+  position: relative;
+}
+/* remove autofill background color*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .btn-search {
-  width: 45px;
-  height: 39px;
-  border: 1px solid;
-  background: #df5e5e;
-  text-align: center;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
+  position: relative;
+  bottom: -2px;
+  background-color: none;
+  outline: none;
+  border: none;
+}
+
+.btn-search i {
+  font-size: 1.3rem;
+  background-color: #df5e5e;
   color: #fff;
+  padding: 8px 15px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
 }
 
 .food-recipe-container {
@@ -64,7 +81,7 @@ input[type="text"] {
 
 @media screen and (max-width: 600px) {
   input[type="text"] {
-    width: 80%;
+    width: 65%;
   }
 
   .loading-animation {

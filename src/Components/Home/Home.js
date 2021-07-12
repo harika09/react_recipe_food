@@ -17,7 +17,7 @@ function Home() {
     const result = await Axios.get(URL);
     setRecipeData(result.data.hits);
     setLoading(false); /* disable loading when data loaded */
-    console.log(result);
+
     if (result.data.hits.length === 0) {
       errorMessage();
       setLoading(false);

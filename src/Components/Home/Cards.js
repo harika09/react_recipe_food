@@ -44,6 +44,7 @@ function Cards({ recipe }) {
         <h3>{label}</h3>
         <div className="view-recipe">
           <button
+            className="btn-recipe"
             onClick={() => {
               showModal();
               setData({
