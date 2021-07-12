@@ -1,7 +1,7 @@
 .food-recipe {
   max-width: 250px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 4px 4px;
   margin-bottom: 20px;
   background-color: #fff;
   position: relative;
@@ -9,7 +9,6 @@
 
 .food-recipe img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }

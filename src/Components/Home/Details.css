@@ -2,10 +2,26 @@ li {
   list-style: none;
 }
 
+.food-recipe-info {
+  margin-top: 10px;
+}
+
 .ingredients,
-.health-list {
+.health {
   text-align: left;
   margin: 30px 0;
+}
+
+.ingredients strong,
+.health strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.ingredient-list,
+.health-list {
+  padding-left: 23px;
 }
 
 .food-serving {
@@ -19,6 +35,37 @@ li {
   flex-direction: column;
 }
 
+.serving span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serving span i {
+  margin-right: 10px;
+  color: #df5e5e;
+}
+
 .food-serving .serving {
   width: 50%;
+}
+
+.dot {
+  margin-right: 10px;
+  height: 5px;
+  width: 5px;
+  background-color: #df5e5e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .food-serving {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .food-serving .serving {
+    margin-bottom: 10px;
+  }
 }

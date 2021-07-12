@@ -13,7 +13,10 @@ function Cards({ recipe }) {
     mealType,
     dietLabels,
     dishType,
+    calories,
+    totalTime,
   } = recipe.recipe;
+
   const [data, setData] = useState({
     label: "",
     image: "",
@@ -25,6 +28,8 @@ function Cards({ recipe }) {
     source: "",
     dietLabels: "",
     dishType: "",
+    calories: "",
+    totalTime: "",
   });
 
   const [click, setClick] = useState(false);
@@ -58,6 +63,8 @@ function Cards({ recipe }) {
                 source: source,
                 dietLabels: dietLabels,
                 dishType: dishType,
+                calories: calories,
+                totalTime: totalTime,
               });
             }}
           >

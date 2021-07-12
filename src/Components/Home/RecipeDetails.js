@@ -13,6 +13,8 @@ function RecipeDetails({ data }) {
     source,
     dietLabels,
     dishType,
+    calories,
+    totalTime,
   } = data;
   return (
     <div className="food-recipe-info">
@@ -22,11 +24,16 @@ function RecipeDetails({ data }) {
       <div className="food-serving">
         <div className="serving">
           <p>Servings</p>
-          <span>{serve}</span>
+          <span>
+            <i className="fas fa-utensils"></i>
+            {serve}
+          </span>
         </div>
+
         <div className="serving">
           <p>Dish</p>
           <span>
+            <i className="fas fa-concierge-bell"></i>
             {Object.keys(dishType ?? {}).length > 0 ? (
               <p>{dishType}</p>
             ) : (
@@ -37,6 +44,7 @@ function RecipeDetails({ data }) {
         <div className="serving">
           <p> Meal</p>
           <span>
+            <i className="fas fa-utensil-spoon"></i>
             {Object.keys(mealType ?? {}).length > 0 ? (
               <p>{mealType}</p>
             ) : (
@@ -48,17 +56,23 @@ function RecipeDetails({ data }) {
 
       <div className="ingredients">
         <strong>Ingredients</strong>
-        <ul>
+        <ul className="ingredient-list">
           {ingredients.map((ingre) => (
-            <li>{ingre.text}</li>
+            <li>
+              <span className="dot"></span>
+              {ingre.text}
+            </li>
           ))}
         </ul>
       </div>
 
-      <div className="health-list">
+      <div className="health">
         <strong>Health Benefits</strong>
         {healthLabels.map((health) => (
-          <li>{health}</li>
+          <ul className="health-list">
+            <span className="dot"></span>
+            {health}
+          </ul>
         ))}
       </div>
     </div>

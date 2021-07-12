@@ -42,7 +42,7 @@ function Home() {
     <div className="home-container">
       <div className="home-wrapper">
         <div className="top-content">
-          <h1>Food Recipe</h1>
+          <h1>Food Recipe Finder</h1>
 
           <div className="home-form">
             <form onSubmit={submit}>
@@ -51,6 +51,7 @@ function Home() {
                 name="food"
                 className="search"
                 placeholder="Enter Food..."
+                autoComplete="off"
                 value={foodName}
                 onChange={(e) => {
                   setFoodName(e.target.value);
