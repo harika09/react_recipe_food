@@ -1,0 +1,9 @@
+li {
+  list-style: none;
+}
+
+.ingredients,
+.health-list {
+  text-align: left;
+  margin: 30px 0;
+}

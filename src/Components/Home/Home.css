@@ -1,0 +1,68 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.home-wrapper {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.top-content h1 {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 15px;
+  width: 30%;
+  border: 3px solid #df5e5e;
+  border-right: none;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #000;
+}
+
+.btn-search {
+  width: 45px;
+  height: 38px;
+  border: 1px solid;
+  background: #df5e5e;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  color: #fff;
+}
+
+.food-recipe-container {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.loading-animation {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8)
+    url("https://i.pinimg.com/originals/dc/66/53/dc6653448a617b0564541708101d3eac.gif")
+    50% 50% no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  input[type="text"] {
+    width: 80%;
+  }
+}
