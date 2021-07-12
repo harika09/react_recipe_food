@@ -68,4 +68,8 @@ li {
   .food-serving .serving {
     margin-bottom: 10px;
   }
+
+  .food-info h3 {
+    width: 350px;
+  }
 }
