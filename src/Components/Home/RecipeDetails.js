@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { v4 as uuid4 } from "uuid";
 import "./Details.css";
 
 function RecipeDetails({ data }) {
@@ -58,7 +59,7 @@ function RecipeDetails({ data }) {
         <strong>Ingredients</strong>
         <ul className="ingredient-list">
           {ingredients.map((ingre) => (
-            <li>
+            <li key={uuid4()}>
               <span className="dot"></span>
               {ingre.text}
             </li>
@@ -68,12 +69,14 @@ function RecipeDetails({ data }) {
 
       <div className="health">
         <strong>Health Benefits</strong>
-        {healthLabels.map((health) => (
-          <ul className="health-list">
-            <span className="dot"></span>
-            {health}
-          </ul>
-        ))}
+        <ul className="health-list">
+          {healthLabels.map((health) => (
+            <li key={uuid4()}>
+              <span className="dot"></span>
+              {health}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
