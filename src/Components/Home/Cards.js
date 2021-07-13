@@ -45,7 +45,14 @@ function Cards({ recipe }) {
 
   return (
     <div key={uuid4()} className="food-recipe">
-      <img src={recipe.recipe.image} alt={recipe.recipe.image} />
+      <img
+        src={image}
+        alt={label}
+        onError={(e) =>
+          (e.target.src =
+            "https://assets.materialup.com/uploads/b03b23aa-aa69-4657-aa5e-fa5fef2c76e8/preview.png")
+        }
+      />
       <div className="food-info">
         <h3>{label}</h3>
         <div className="view-recipe">
