@@ -91,6 +91,10 @@
   }
 
   .food-recipe {
-    max-width: 100%;
+    max-width: 40%;
+  }
+
+  .food-info h3 {
+    font-size: 0.8rem;
   }
 }

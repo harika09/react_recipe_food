@@ -54,7 +54,7 @@ function Cards({ recipe }) {
         }
       />
       <div className="food-info">
-        <h3>{label}</h3>
+        <h3>{label.substring(0, 20)}...</h3>
         <div className="view-recipe">
           <button
             className="btn-recipe"

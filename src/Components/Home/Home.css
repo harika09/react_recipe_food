@@ -52,6 +52,18 @@ input:-webkit-autofill:active {
   cursor: pointer;
 }
 
+.btn-search {
+  position: relative;
+  bottom: 1.5px;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  height: 50px;
+  padding: 10px 15px;
+  background-color: #df5e5e;
+  color: #fff;
+}
+
 .loading-animation {
   position: fixed;
   z-index: 1000;
@@ -71,9 +83,5 @@ input:-webkit-autofill:active {
 
   .loading-animation {
     background-size: 450px;
-  }
-
-  .btn-search {
-    right: 10%;
   }
 }
