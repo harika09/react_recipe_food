@@ -77,6 +77,9 @@ input:-webkit-autofill:active {
 }
 
 @media screen and (max-width: 600px) {
+  .top-content h1 {
+    font-size: 1.2rem;
+  }
   input[type="text"] {
     width: 65%;
   }

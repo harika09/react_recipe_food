@@ -66,6 +66,16 @@ li {
   }
 
   .food-serving .serving {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .food-serving span {
+    display: block;
+    font-size: 0.8rem;
+  }
+
+  .food-serving .serving {
     margin-bottom: 10px;
   }
 }

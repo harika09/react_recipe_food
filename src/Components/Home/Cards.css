@@ -94,7 +94,17 @@
     max-width: 40%;
   }
 
+  .btn-recipe {
+    font-size: 0.5rem;
+  }
+
   .food-info h3 {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .food-recipe {
+    max-width: 100%;
   }
 }
