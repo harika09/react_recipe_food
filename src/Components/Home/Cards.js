@@ -84,7 +84,7 @@ function Cards({ recipe }) {
         <div key={uuid4()} className={click ? "modal active" : "modal"}>
           <div className="modal-content">
             <span className="close" onClick={hideModal}>
-              &times;
+              <i class="far fa-times-circle"></i>
             </span>
             <RecipeDetails data={data} />
           </div>
